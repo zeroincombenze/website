@@ -1,29 +1,26 @@
-/**
-*    Copyright 2016 Antiun Ingeniería S.L. - Jairo Llopis
-*    Copyright 2016 LasLabs Inc.
-*    License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
-**/
+/* Copyright 2016 Antiun Ingeniería S.L. - Jairo Llopis
+ * License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). */
+odoo.define('website_anchor_smooth_scroll.website_anchor_smooth_scroll', function (require) {
 
-odoo.define('website_anchor_smooth_scroll', function(require) {
-    'use strict';
+    "use strict";
 
-    var base = require('web_editor.base');
-
-    var smooth_scroll = function(event) {
+    function website_anchor_smooth_scroll (event) {
         event.preventDefault();
-        var anchor_fragment = event.target.hash;
+        var target = $(event.currentTarget.hash);
 
-        // Do this before scrolling so that browser history accurately reflects scroll position at time of click 
-        history.pushState(null, document.title, anchor_fragment);
+        return $('html, body')
+            .stop()
+            .animate({
+                'scrollTop': target.offset().top - 100,
+            })
+            .promise()
+            .done(function () {
+                history.pushState(null, document.title, event.target.hash);
+            });
+    }
 
-        return $('html, body').stop().animate({
-            'scrollTop': $(anchor_fragment).offset().top - 100
-        }).promise();
-    };
+    require('web.dom_ready');
 
-    base.ready().done(function() {
-        $('a[href^="#"][href!="#"][href!="#advanced-view-editor"]').click(smooth_scroll);
-    });
+    $("a[href^='#']:not([href=#])").on("click", website_anchor_smooth_scroll);
 
-    return {'scroll_handler': smooth_scroll};
 });

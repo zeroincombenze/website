@@ -13,7 +13,6 @@ build/
 develop-eggs/
 dist/
 eggs/
-lib/
 lib64/
 parts/
 sdist/
@@ -57,7 +56,3 @@ docs/_build/
 
 # Debug maps
 *.css.map
-stdout.log
-*.oca
-*.z0i
-.gitrepname
