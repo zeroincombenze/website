@@ -1,88 +1,58 @@
-[![Build Status](https://travis-ci.org/zeroincombenze/website.svg?branch=10.0)](https://travis-ci.org/zeroincombenze/website)
-[![license agpl](https://img.shields.io/badge/licence-AGPL--3-blue.svg)](http://www.gnu.org/licenses/agpl-3.0.html)
-[![Coverage Status](https://coveralls.io/repos/github/zeroincombenze/website/badge.svg?branch=10.0)](https://coveralls.io/github/zeroincombenze/website?branch=10.0)
-[![codecov](https://codecov.io/gh/zeroincombenze/website/branch/10.0/graph/badge.svg)](https://codecov.io/gh/zeroincombenze/website/branch/10.0)
-[![OCA_project](http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-oca-10.svg)](https://github.com/OCA/website/tree/10.0)
-[![Tech Doc](http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-docs-10.svg)](http://wiki.zeroincombenze.org/en/Odoo/10.0/dev)
-[![Help](http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-help-10.svg)](http://wiki.zeroincombenze.org/en/Odoo/10.0/man/)
-[![try it](http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-try-it-10.svg)](http://erp10.zeroincombenze.it)
 
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/website&target_branch=15.0)
+[![Pre-commit Status](https://github.com/OCA/website/actions/workflows/pre-commit.yml/badge.svg?branch=15.0)](https://github.com/OCA/website/actions/workflows/pre-commit.yml?query=branch%3A15.0)
+[![Build Status](https://github.com/OCA/website/actions/workflows/test.yml/badge.svg?branch=15.0)](https://github.com/OCA/website/actions/workflows/test.yml?query=branch%3A15.0)
+[![codecov](https://codecov.io/gh/OCA/website/branch/15.0/graph/badge.svg)](https://codecov.io/gh/OCA/website)
+[![Translation Status](https://translation.odoo-community.org/widgets/website-15-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/website-15-0/?utm_source=widget)
 
-[![en](https://github.com/zeroincombenze/grymb/blob/master/flags/en_US.png)](https://www.facebook.com/groups/openerp.italia/)
-================================================================================================
-================================================================================================
+<!-- /!\ do not modify above this line -->
 
-Odoo modules for website builder
-================================
+# website
 
-Includes modules that expand official website modules and include:
+TODO: add repo description.
 
-* More functionality for the website builder.
-* More building blocks with pre-configured data.
-* Tools for the website environment.
-* and more...
+<!-- /!\ do not modify below this line -->
+
+<!-- prettier-ignore-start -->
 
 [//]: # (addons)
 
-
 Available addons
 ----------------
-addon | version | OCA version | summary
+addon | version | maintainers | summary
 --- | --- | --- | ---
-[website_analytics_piwik](website_analytics_piwik/) | 10.0.1.0.0 | :repeat: | Track website users using piwik
-[website_anchor_smooth_scroll](website_anchor_smooth_scroll/) | 10.0.1.0.0 | :repeat: | Replace default behavior for internal links (anchor only) with smooth scroll
-[website_blog_category](website_blog_category/) | 10.0.1.0.0 | :repeat: | Website Blog - Categories
-[website_breadcrumb](website_breadcrumb/) | 10.0.1.0.0 | :repeat: | Let you have breadcrumbs in website pages
-[website_container_fluid](website_container_fluid/) | 10.0.1.0.0 | :repeat: | Let you choose between fixed or fluid containers
-[website_crm_recaptcha](website_crm_recaptcha/) | 10.0.1.0.0 | :repeat: | Provides a ReCaptcha validation in Website Contact Form
-[website_field_autocomplete](website_field_autocomplete/) | 10.0.1.0.0 | :repeat: | Provides an autocomplete field for Website on any model
-[website_form_recaptcha](website_form_recaptcha/) | 10.0.1.0.0 | :repeat: | Provides a ReCaptcha field for Website Forms
-[website_no_crawler](website_no_crawler/) | 10.0.1.0.0 | :repeat: | Disables robots.txt for indexing by webcrawlers like Google
-[website_sale_hide_empty_category](website_sale_hide_empty_category/) | 10.0.1.0.0 | :repeat: | Hide any Product Categories that are empty
-[website_sale_line_total](website_sale_line_total/) | 10.0.1.0.0 | :repeat: | Adds separate columns for unit price and total price
-[website_seo_redirection](website_seo_redirection/) | 10.0.1.0.0 | :repeat: | Redirect any controller to the URL of your dreams
-[website_snippet_country_dropdown](website_snippet_country_dropdown/) | 10.0.1.0.0 | :repeat: | Allow to select country in a dropdown
-[website_snippet_data_slider](website_snippet_data_slider/) | 10.0.1.0.0 | :repeat: | Abstract data slider for use on website. Primary use (and default implementation) is product slider.
-
-
-Unported addons
----------------
-addon | version | OCA version | summary
---- | --- | --- | ---
-[website_backend_views](website_backend_views/) | 8.0.1.0.0 (unported) | :repeat: | Hook backend views into your website frontend
-[website_blog_facebook_comment](website_blog_facebook_comment/) | 8.0.1.0.0 (unported) | :repeat: | Add Facebook comments on blog posts
-[website_blog_mgmt](website_blog_mgmt/) | 9.0.1.0.0 (unported) | :repeat: | Website blog Management
-[website_cookie_notice](website_cookie_notice/) | 8.0.1.0.0 (unported) | 10.0.1.0.0 | Show cookie notice according to cookie law
-[website_crm_privacy_policy](website_crm_privacy_policy/) | 8.0.1.0.0 (unported) | 10.0.1.0.0 | Website CRM privacy policy
-[website_forum_censored](website_forum_censored/) | 9.0.1.0.0 (unported) | :repeat: | Block phrases entered in forum posts and comments.
-[website_hr_department](website_hr_department/) | 8.0.0.1.0 (unported) | :repeat: | Display the structure of your departments and their members.
-[website_legal_page](website_legal_page/) | 9.0.1.0.0 (unported) | 10.0.1.2.0 | Website Legal Page
-[website_logo](website_logo/) | 10.0.1.0.0 (unported) | 10.0.1.0.0 | Website company logo
-[website_menu_by_user_status](website_menu_by_user_status/) | 8.0.1.1.0 (unported) | :repeat: | Allow to manage the display of website.menus
-[website_menu_multilang](website_menu_multilang/) | 8.0.0.1.0 (unported) | :repeat: | Website Menu Multilanguage
-[website_portal_contact](website_portal_contact/) | 9.0.1.0.0 (unported) | :repeat: | Allows logged in portal users to manage their contacts
-[website_portal_purchase](website_portal_purchase/) | 9.0.1.0.0 (unported) | :repeat: | Add purchase orders and quotation in the frontend portal
-[website_sale_order_company](website_sale_order_company/) | 8.0.1.0.0 (unported) | :repeat: | Set order company according to products company
-[website_sale_unsaleable_options](website_sale_unsaleable_options/) | 8.0.1.0.0 (unported) | :repeat: | Prevent optional products to be sold singularly
+[website_analytics_matomo](website_analytics_matomo/) | 15.0.1.0.0 |  | Track website users using matomo
+[website_breadcrumb](website_breadcrumb/) | 15.0.1.0.0 |  | Let you have breadcrumbs in website pages
+[website_cookiebot](website_cookiebot/) | 15.0.1.0.0 |  | Ask for cookies consent connecting with Cookiebot
+[website_cookiefirst](website_cookiefirst/) | 15.0.1.0.0 |  | Cookiefirst integration
+[website_crm_privacy_policy](website_crm_privacy_policy/) | 15.0.1.1.0 |  | Website CRM privacy policy
+[website_crm_quick_answer](website_crm_quick_answer/) | 15.0.1.0.1 |  | Add an automatic answer for contacts asking for info
+[website_form_require_legal](website_form_require_legal/) | 15.0.1.1.0 |  | Add possibility to require confirm legal terms.
+[website_forum_subscription](website_forum_subscription/) | 15.0.1.0.0 |  | Adds a button to allow subscription from the website
+[website_google_tag_manager](website_google_tag_manager/) | 15.0.2.0.0 |  | Add support for Google Tag Manager
+[website_legal_page](website_legal_page/) | 15.0.2.0.0 |  | Website Legal Page
+[website_odoo_debranding](website_odoo_debranding/) | 15.0.1.0.1 |  | Remove Odoo Branding from Website
+[website_plausible](website_plausible/) | 15.0.1.1.1 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Track website users using plausible
+[website_snippet_big_button](website_snippet_big_button/) | 15.0.1.1.0 |  | A snippet that adds two big buttons
+[website_snippet_country_dropdown](website_snippet_country_dropdown/) | 15.0.1.0.0 |  | Allow to select country in a dropdown
+[website_snippet_dynamic_link](website_snippet_dynamic_link/) | 15.0.1.0.0 |  | Website Snippet Dynamic Link
+[website_snippet_marginless_gallery](website_snippet_marginless_gallery/) | 15.0.1.0.0 |  | Add a snippet to have a marginless image gallery
+[website_snippet_openstreetmap](website_snippet_openstreetmap/) | 15.0.1.0.0 |  | Website Snippet OpenStreetMap
+[website_whatsapp](website_whatsapp/) | 15.0.1.0.1 | [![ioans73](https://github.com/ioans73.png?size=30px)](https://github.com/ioans73) | Whatsapp integration
 
 [//]: # (end addons)
 
-[//]: # (copyright)
+<!-- prettier-ignore-end -->
+
+## Licenses
+
+This repository is licensed under [AGPL-3.0](LICENSE).
+
+However, each module can have a totally different license, as long as they adhere to Odoo Community Association (OCA)
+policy. Consult each module's `__manifest__.py` file, which contains a `license` key
+that explains its license.
 
 ----
-
-**Odoo** is a trademark of [Odoo S.A.](https://www.odoo.com/) (formerly OpenERP, formerly TinyERP)
-
-**OCA**, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit organization whose
-mission is to support the collaborative development of Odoo features and
-promote its widespread use.
-
-**zeroincombenze®** is a trademark of [SHS-AV s.r.l.](http://www.shs-av.com/)
-which distributes and promotes **Odoo** ready-to-use on its own cloud infrastructure.
-[Zeroincombenze® distribution](http://wiki.zeroincombenze.org/en/Odoo)
-is mainly designed for Italian law and markeplace.
-Everytime, every Odoo DB and customized code can be deployed on local server too.
-
-[//]: # (end copyright)
-
-[![chat with us](https://www.shs-av.com/wp-content/chat_with_us.gif)](https://tawk.to/85d4f6e06e68dd4e358797643fe5ee67540e408b)
+OCA, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit
+organization whose mission is to support the collaborative development of Odoo features
+and promote its widespread use.

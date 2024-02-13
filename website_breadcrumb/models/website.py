@@ -1,14 +1,12 @@
-# -*- coding: utf-8 -*-
-# © 2015 Grupo ESOC Ingeniería de Servicios, S.L.U. - Jairo Llopis
+# Copyright 2015 Grupo ESOC Ingeniería de Servicios, S.L.U. - Jairo Llopis
 # License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl.html).
 
-from odoo import api, models
+from odoo import models
 
 
 class WebsiteMenu(models.Model):
     _inherit = "website.menu"
 
-    @api.multi
     def get_parents(self, revert=False, include_self=False):
         """List current menu's parents.
 
